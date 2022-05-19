@@ -87,7 +87,7 @@ body {
 .ldio-wj1hmv0m25m div { box-sizing: content-box;}
 
 .header {
-    background-color: #0769e9;
+    background-color: #46495a;
     height: 80px;
 /*     position: fixed; */
     width: 100%;
@@ -103,12 +103,13 @@ body {
 }
 
 .nav-menu-item-link {
-    color: white;
+    color: #fbe134
+    ;
     text-decoration: none;
 }
 
 .logo{
-    color: white;
+    color: #fbe134;
     font-size: 30px;
     font-weight: bold;
     padding: 0 40px;
@@ -137,7 +138,7 @@ body {
 
 .nav-menu-link:hover,
 .nav-menu-link_active {
-    background-color: #034574;
+    background-color: #fbe134;
     transition: 0.5s;
   }
 
@@ -191,7 +192,7 @@ body {
     .nav-menu-item-link:hover, 
     .nav-menu-link_active {
         background: none;
-        color: #83c5f7;
+        color: #fbe134;
     }
     .nav-toggle {
         display: block; 
