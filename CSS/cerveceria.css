@@ -1,26 +1,13 @@
 * {
     margin: 0;
-}
-/* Barra de carga */
-@keyframes load {
-    0% {
-        box-shadow: 0 0 rgba(red, green, blue, 0) inset;
-    }
-    100% {
-        box-shadow: 0 -70px #f17b20 inset;
-    }
-}
-/* Fin de barra de carga */
-/* Comienza las cartas de presentacion de cervezas */
-main {
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    min-height: 100vh;
     font-family: 'Anton', sans-serif;
 }
-
+/* Comienza las cartas de presentacion de cervezas */
 .card {
     position: relative;
     width: 300px;
@@ -114,4 +101,20 @@ main {
     display: inline-block;
     text-decoration: none;
     font-weight: 250;
+}
+.card .product_png {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    height: 500px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+.card:hover .product_png {
+    left: 80%;
+    transform: translate(-50%, -50%) scale(1);
+    transition-delay: 0.5s;
+
+
 }
