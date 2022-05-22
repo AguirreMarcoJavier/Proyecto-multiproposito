@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+}
+/* Barra de carga */
+@keyframes load {
+    0% {
+        box-shadow: 0 0 rgba(red, green, blue, 0) inset;
+    }
+    100% {
+        box-shadow: 0 -70px #f17b20 inset;
+    }
+}
+/* Fin de barra de carga */
+/* Comienza las cartas de presentacion de cervezas */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    border-radius: 20PX;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.card:hover {
+    width: 600px;
+    transition-delay: 0s;
+}
+
+.card .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.card .circle::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: var(--clr);
+   clip-path: circle(120px at center);
+   transition: 0.5s;
+}
+.card:hover .circle::before {
+    clip-path: circle(400px at center);
+}
